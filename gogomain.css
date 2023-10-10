@@ -1,0 +1,221 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header */
+.part1 {
+  margin-bottom: 40px;
+}
+#navbar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 30px;
+  padding-left: 25px;
+}
+#navbar .logo {
+  width: 119px;
+  height: 38px;
+}
+#navbar ul {
+  list-style: none;
+  display: flex;
+}
+#navbar li {
+  margin-right: 45px;
+}
+#navbar .search {
+  width: 20px;
+  height: 20px;
+}
+#navbar .icon {
+  width: 20px;
+  height: 22px;
+  background-color: transparent;
+}
+.threeitems {
+  display: flex;
+  justify-content: center;
+  margin-right: 20px;
+  font-size: 13px;
+}
+.weather {
+  margin-top: -15px;
+  margin-left: 80px;
+  margin-right: -10px;
+}
+.weather2 {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+  margin-right: 15px;
+  font-size: 18px;
+}
+.horoscope {
+  margin-top: -15px;
+  margin-left: 80px;
+  margin-right: -10px;
+}
+.horoscope2 {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+  margin-right: 10px;
+  font-size: 18px;
+}
+.exchange {
+  margin-top: -15px;
+  margin-left: 80px;
+  margin-right: -10px;
+}
+.exchange2 {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+  margin-right: 10px;
+  font-size: 18px;
+}
+/* 2r heseg */
+
+.part2 {
+  /*   margin-top: 40px;
+  margin-left: 170px; */
+  margin: auto;
+  display: flex;
+}
+.facenews {
+  padding-top: 60px;
+  padding-left: 40px;
+  background-color: rgba(250, 243, 243, 0.618);
+}
+.redbutton {
+  color: rgb(255, 255, 255);
+  background-color: rgba(199, 56, 17, 0.923);
+  border-radius: 10px;
+  padding: 5px 12px;
+}
+.topicnews {
+  padding-top: 20px;
+  font-size: 28px;
+}
+.littlenews {
+  padding-top: 30px;
+  font-size: 16px;
+  padding-right: 10px;
+}
+
+/* PART 3 */
+.part3 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding-right: 58px;
+}
+.squares-photo {
+  width: 263px;
+  height: 175px;
+}
+.square1 {
+  width: 263px;
+  gap: 15px;
+}
+.square2 {
+  width: 263px;
+  gap: 15px;
+}
+.square3 {
+  width: 263px;
+  gap: 15px;
+}
+.zurag-information {
+  line-height: 25px;
+}
+/* Soligddog zurag */
+
+.switch-photo {
+  width: 263px;
+  height: 280px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.square4 {
+  width: 263px;
+  height: 280px;
+  position: relative;
+  overflow: hidden;
+}
+@keyframes switchPhotos {
+  0%,
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  33.33% {
+    opacity: 1;
+    visibility: visible;
+  }
+  66.66% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.switch-photo:nth-child(1) {
+  animation: switchPhotos 12s infinite; /* 4s per image, 3 images */
+}
+.switch-photo:nth-child(2) {
+  animation: switchPhotos 12s infinite -4s; /* Offset by 4s */
+}
+.switch-photo:nth-child(3) {
+  animation: switchPhotos 12s infinite -8s; /* Offset by 8s */
+}
+
+/* PART 4 */
+.part4 {
+  margin-top: 50px;
+  padding-right: 58px;
+}
+.gogostory {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.todruulah {
+  color: azure;
+  background-color: rgb(36, 135, 234);
+  padding: 5px 5px;
+  font-size: 19px;
+}
+.six-overlay {
+  display: flex;
+  justify-content: space-between;
+}
+.overlays {
+  width: 170px;
+  height: 235px;
+}
+.overlaybox {
+  position: relative;
+  display: inline-block;
+}
+.text-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  color: #fff;
+  font-size: 13px;
+  overflow: hidden;
+  line-height: 17px;
+  padding-bottom: 50px;
+}
